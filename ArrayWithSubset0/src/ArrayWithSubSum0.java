@@ -4,14 +4,14 @@ import java.util.Scanner;
 /**
  * Created by ananthrkn on 1/1/17.
  */
-public class ArrayWithSubset0 {
+public class ArrayWithSubSum0 {
     int a[];
     int size, sum;
     Scanner input;
     HashMap<Integer,Integer> map;
     int count;
 
-    public ArrayWithSubset0(){
+    public ArrayWithSubSum0(){
         input = new Scanner(System.in);
         size = input.nextInt();
         a = new int[size];
@@ -45,7 +45,7 @@ public class ArrayWithSubset0 {
     }
 
     public static void main(String[] args){
-        ArrayWithSubset0 a = new ArrayWithSubset0();
+        ArrayWithSubSum0 a = new ArrayWithSubSum0();
         a.operation();
     }
 }
