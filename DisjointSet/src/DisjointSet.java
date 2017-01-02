@@ -19,10 +19,11 @@ public class DisjointSet {
 
         for(int i = 0; i < b.length; i++){
             if(map.containsKey(b[i])){
-                return true;
+                System.out.println(b[i]+"\t is common");
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public static void main(String[] args){
