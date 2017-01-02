@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -6,19 +7,19 @@ import java.util.Scanner;
  */
 public class DisjointSet {
 
-    HashMap<Integer, Integer> map;
+    HashSet<Integer> set;
 
     public DisjointSet(){
-        map = new HashMap<>();
+        set = new HashSet<>();
     }
 
     public boolean operation(int[] a, int[] b){
         for(int i = 0; i < a.length; i++){
-            map.put(a[i], i);
+            set.add(a[i]);
         }
 
         for(int i = 0; i < b.length; i++){
-            if(map.containsKey(b[i])){
+            if(set.contains(b[i])){
                 System.out.println(b[i]+"\t is common");
                 return false;
             }
